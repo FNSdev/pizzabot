@@ -17,6 +17,7 @@ def main():
         metavar='S',
         type=strategy,
         required=True,
+        help='Delivering strategy. Valid options are: closest_neighbour, dynamic_programming',
     )
     args = parser.parse_args()
     pizza_bot = PizzaBot(strategy=args.strategy)

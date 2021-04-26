@@ -45,6 +45,10 @@ cd pizzabot/
 python main.py "5x5(0,0)(1,3)(4,4)(4,2)(4,2)(0,1)(3,2)(2,3)(4,1)" --strategy="dynamic_programming"
 ```
 
+Valid strategy choices are:
+- dynamic_programming
+- closest_neighbour
+
 ### [Optional] Run tests
 ```
 make test
