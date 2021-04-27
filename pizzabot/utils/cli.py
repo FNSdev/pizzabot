@@ -34,7 +34,7 @@ def pizzabot_input(value: str) -> list[House]:
 
 def strategy(value: str) -> BaseStrategy:
     strategy_class = STRATEGY_NAME_TO_CLASS_MAPPING.get(value)
-    if strategy is None:
+    if not strategy_class:
         raise ArgumentTypeError(f'Strategy {value} is not implemented')
 
     return strategy_class()  # type: ignore
